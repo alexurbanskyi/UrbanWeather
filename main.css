@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  list-style: none;
+  user-select: none;
+}
+
+.main {
+  padding: 0 10px;
+  height: 100vh;
+  background-image: url("https://media.istockphoto.com/photos/weather-forecast-concept-picture-id531889697?k=20&m=531889697&s=170667a&w=0&h=DH9uBMxKt4WIjLA__q4cPFt21A4Wlc4kDdFSK5a7D7g=");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+.main-current_weather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://androidinsider.ru/wp-content/uploads/2020/04/weather-1280x720.jpg");
+}
+
+.header {
+  background-color: rgb(131, 237, 237, 0.5);
+  font-family: "PT Sans Narrow", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  cursor: pointer;
+}
+.logo img {
+  width: 60px;
+  display: block;
+}
+.logo_description {
+  font-size: 30px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav-link {
+  padding: 0 15px;
+  font-size: 30px;
+}
+/* ------------------creatBigCity------------------------------ */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  width: 170px;
+  height: 280px;
+  border: 1px solid rgb(30, 21, 213);
+  border-radius: 8px;
+  background: rgb(109, 194, 233, 0.4);
+  font-family: "PT Sans Narrow", sans-serif;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.card:hover {
+  background: rgba(9, 135, 194, 0.4);
+}
+.main-big-sity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-current-temp{
+  font-size: 40px;
+}
+.card-current-temp span{
+  font-size: 60px;
+  color: blue;
+}
+.card-main-sity {
+  font-size: 50px;
+  text-align: center;
+  font-family: "PT Sans Narrow", sans-serif;
+  padding: 100px 0 10px 0;
+  color: rgb(14, 14, 14);
+}
+.card-sity-name {
+  font-size: 25px;
+}
+
+/* -----------------current Weather-------------------*/
+
+.city-current-weather {
+  padding: 10px;
+  border: 1px solid rgb(60, 169, 220);
+  border-radius: 10px;
+  background-color: rgb(114, 191, 194, 0.5);
+  font-family: "PT Sans Narrow", sans-serif;
+}
+.current-sity-name {
+  text-align: center;
+  font-size: 40px;
+  padding: 10px;
+  font-weight: 900;
+}
+.city-current-temp {
+  font-size: 25px;
+}
+.city-current-temp span {
+  font-size: 45px;
+  color: rgb(44, 114, 245);
+}
+.city-current-feels_like {
+  font-size: 20px;
+}
+.city-current-feels_like span {
+  font-size: 30px;
+  color: rgb(44, 114, 245);
+}
+
+.current-weather-icon {
+  text-align: center;
+}
+.current-weather-description {
+  text-align: center;
+  font-weight: 900;
+  padding-bottom: 20px;
+}
+.city-current-minmaxtemp span {
+  font-size: 22px;
+  color: rgb(1, 49, 138);
+}
+.current-humidity span {
+  font-size: 22px;
+}
+.current-wind-speed span {
+  font-size: 22px;
+}
+.current-wind-gust span {
+  font-size: 22px;
+}
+/* --------current 3day 5day-------------- */
+/* css */
+.weather-day-btn{
+  font-family: "PT Sans Narrow", sans-serif;
+  padding: 10px;
+  width: 150px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+.weather-btn{
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 15px 0;
+  text-align: center;
+  background-color: rgb(114, 191, 194, 0.5);
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+  
+}
+.active_btn{
+  border: 2px solid rgb(171, 169, 177);
+  background-color: rgb(114, 191, 194, 0.5);
+  box-shadow: 0px 5px 12px 2px rgba(68, 155, 221, 0.32);
+  font-weight: 800;
+}
+
+/* -------- 3 - 5day card ----------*/
+.three-day-weather{
+  background-image: url('https://horyn.info/wp-content/uploads/2020/05/pogoda-2-sentyabrya-2.jpg');
+}
+
+.city-name{
+  font-size: 70px;
+  padding: 100px 0 20px 0;
+  font-family: "PT Sans Narrow", sans-serif;
+  text-align: center;
+
+}
+.card-wrapper{
+  font-family: "PT Sans Narrow", sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+.three-day-card{
+  text-align: center;
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 2px;
+  background-color: rgb(114, 191, 194, 0.5);
+}
+.three-day-temp span{
+  font-size: 30px;
+  color: blue;
+}
+.date-time{
+  font-size: 15px;
+  font-weight: 900;
+}
+.three-day-description{
+  font-size: 12px;
+}
+/* ------------ ПОИСК-------------- */
+.input-block{
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.input-block label{
+  font-size: 30px;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+.input-block input{
+  width: 300px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 0 3px 0 10px;
+  font-size: 20px;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+.input-block button{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-image: url('https://freelance.ru/img/portfolio/pics/00/31/B0/3256463.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
